@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .class1 {
+            background-color: aqua;
+        }
+        
+        #title {
+            background-color: burlywood;
+        }
+
+        .ex1 {
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1> 제목 </h1>
+    <h2> 제목 </h2>
+    <h3 class="class1"> 제목 </h3>
+    <h4 id="title"> 제목 </h4>
+    <h5 class="class1"> 제목 </h5>
+    <h6 id="title"> 제목 </h6>
+    
+    
+    
+    본문 내용입니다
+    Live Server, Live Preview, Open in Browser
+    <hr>
+    # 1. grid system
+
+    <div class="container text-center">
+        <div class="row ex1">
+          <div class="col ex1">
+            Column1
+          </div>
+          <div class="col ex1">
+            Column2
+          </div>
+          <div class="col ex1">
+            Column3
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row ex1">
+          <div class="col ex1">
+            1 of 2
+          </div>
+          <div class="col ex1">
+            2 of 2
+          </div>
+        </div>
+        <div class="row ex1">
+          <div class="col-2 ex1">
+            1 of 3
+          </div>
+          <div class="col-5 ex1">
+            2 of 3
+          </div>
+          <div class="col ex1">
+            3 of 3
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      2. 제목
+      <h1 class="display-1"> 제목 </h1>
+      <h2 class="display-2"> 제목 </h2>
+      <h3 class="display-3"> 제목 </h3>
+      <h4 class="display-4"> 제목 </h4>
+      <h5 class="class1"> 제목 </h5>
+      <h6 id="title"> 제목 </h6>
+      
+      
+      <hr>
+      3. 이미지 태그
+      - 기본 html에서는
+      - 기왕이면 상대경로를 사용해주세요. <br>
+      <img src="C:\ITstudy\07_FLASK\data\5b4c05820a99d2738de6.jpg" width="300" height="200"/>
+      <img src="data\5b4c05820a99d2738de6.jpg" width="300" height="200"/>
+
+      <br>
+      - img-fluid class 사용 - 크기가 조정됨
+      <br>
+      <img src="data\5b4c05820a99d2738de6.jpg" class="img-fluid" alt="나비와 고양이">
+      
+      <br>
+      - img-thumbnail 테두리
+      <img src="data\88d8b0ac3f33be09676c82b3f95c49ee.gif" class="img-thumbnail" alt="놀란고양이">
+      
+      - 이미지 정열하기
+      <div>
+      <img src="data\HappyCat.gif" class="rounded float-start" alt="햅삐캣" width="120" height="100">
+      <img src="data\HappyCat.gif" class="rounded float-end" alt="햅삐캣" width="120" height="100">
+      </div>
+<br>
+<br>
+<br>
+<br>
+      <hr>
+      4. 테이블
+      <br>
+      <p></p>
+      <table class="table">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table">
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td class="table-warning">@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr >
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table">
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td class="table-warning">@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <hr class="colo">
+      5. 색깔
+
+      <div class="bd-content ps-lg-4 ex1">
+        
+
+        <h2 id="theme-colors">Theme colors</h2>
+  <p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstrap&rsquo;s <code>scss/_variables.scss</code> file.</p>
+  <div class="row">
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-primary text-white">Primary</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-secondary text-white">Secondary</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-success text-white">Success</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-danger text-white">Danger</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-warning text-dark">Warning</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-info text-dark">Info</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-light text-dark">Light</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-dark text-white">Dark</div>
+    </div>
+  
+  </div>
+  
+  <p class="text-primary">.text-primary</p>
+  <p class="text-secondary">.text-secondary</p>
+  <p class="text-success">.text-success</p>
+  <p class="text-danger">.text-danger</p>
+  <p class="text-warning bg-dark">.text-warning</p>
+  <p class="text-info bg-dark">.text-info</p>
+  <p class="text-light bg-dark">.text-light</p>
+  <p class="text-dark">.text-dark</p>
+  <p class="text-body">.text-body</p>
+  <p class="text-muted">.text-muted</p>
+  <p class="text-white bg-dark">.text-white</p>
+  <p class="text-black-50">.text-black-50</p>
+  <p class="text-white-50 bg-dark">.text-white-50</p>
+  
+  <div class="text-danger">This is default primary text</div>
+  <div class="text-danger text-opacity-75">This is 75% opacity primary text</div>
+  <div class="text-dager text-opacity-50">This is 50% opacity primary text</div>
+  <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+  
+  <hr id="acco">
+  6. 아코디언 - 움직임은 맨 아래 설치한 script src 뒤의 bootstrap.min.js에 의해서 만들어집니다
+ 
+  <br>
+  <div class="accordion ex1" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-danger text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            부다스밸리
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body bg-danger bg-opacity-25">
+            <strong>똠양꿍이 정말 맛있는 곳.</strong>
+            <img src="data\tomyam.jpg" class="img-fluid"/>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-warning text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            공릉 닭한마리
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body bg-warning bg-opacity-25">
+            <strong>깔끔하고 진한 닭한마리! 칼국수 사리 추가는 필수</strong> 
+            <img src="data\dak.jpg" class="img-fluid"/>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            엉터리생고기
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body bg-dark bg-opacity-25"
+            <strong>잘 숙성된 돼지고기는 소고기보다 맛있다. 항정살 추천</strong>
+            <img src="data\2371594C5848F2E717.jpg" class="img-fluid"/>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    7. 버튼 <br>
+    <button type="button" class="btn">Base class</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+
+    <p></p>
+    <a class="btn btn-primary" href="http://www.google.com" role="button">구글로 가기</a>
+    <a class="btn btn-primary" href="#acco" role="button">Link</a>
+    <!-- href 태그 뒤에는 id 혹은 도메인 주소 등 특정 위치를 가리키는 -->
+    <a class="btn btn-primary" href=".colo" type="submit">Link2</a>
+    <input class="btn btn-primary" type="button" value="Input">
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <input class="btn btn-primary" type="reset" value="Reset">
+
+    <hr>
+    8. 뱃지
+    <button type="button" class="btn btn-primary">
+        Notifications <span class="badge text-bg-secondary">4</span>
+      </button>
+
+    <hr>
+    9. Carousel -> 슬라이드
+    이미지 파일 같은 경우 사용하지면 비율을 넣을 때 일치시켜서 넣어주는 것을 권장합니다.
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="data\snoopy.jpg" class="d-block w-50" alt="스누피1">
+          </div>
+          <div class="carousel-item">
+            <img src="data\snoopy2.jpg" class="d-block w-50" alt="스누피2">
+          </div>
+          <div class="carousel-item">
+            <img src="data\snoopy3.jpg" class="d-block w-50" alt="스누피3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    
+    <hr>
+    10. Card
+    <div class="card" style="width: 18rem;">
+        <img src="data\tomyam.jpg" class="card-img-top" alt="부다스밸리">
+        <div class="card-body">
+          <h5 class="card-title">부다스밸리</h5>
+          <p class="card-text">똠양꿍과 파인애플 볶음밥 짱짱</p>
+          <a href="#" class="btn btn-primary">냠</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="data/2371594C5848F2E717.jpg" class="card-img-top" alt="엉터리생고기">
+        <div class="card-body">
+          <h5 class="card-title">엉터리생고기</h5>
+          <p class="card-text">항정살 맛있음</p>
+          <a href="#" class="btn btn-primary">냠</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="data/dak.jpg" class="card-img-top" alt="공릉닭한마리">
+        <div class="card-body">
+          <h5 class="card-title">공릉닭한마리</h5>
+          <p class="card-text">국물이 끝내줘요</p>
+          <a href="#" class="btn btn-primary">냠</a>
+        </div>
+      </div>
+    <br>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="data\tomyam.jpg" class="card-img-top" alt="부다스밸리">
+                <div class="card-body">
+                  <h5 class="card-title">부다스밸리</h5>
+                  <p class="card-text">똠양꿍과 파인애플 볶음밥 짱짱</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="data/2371594C5848F2E717.jpg" class="card-img-top" alt="엉터리생고기">
+                <div class="card-body">
+                  <h5 class="card-title">엉터리생고기</h5>
+                  <p class="card-text">항정살 맛있음</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="data/dak.jpg" class="card-img-top" alt="공릉닭한마리">
+                <div class="card-body">
+                  <h5 class="card-title">공릉닭한마리</h5>
+                  <p class="card-text">국물이 끝내줘요</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <hr>
+    11. Modal (안내창)
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Modal 안내창 열기
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">제목</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          클릭해서 나오는 화면입니다.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-primary">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
